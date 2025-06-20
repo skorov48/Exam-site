@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Итоги обучения</title>
+<style>
+  /* Цветовая схема: белый, черный, красный */
+  :root {
+    --background-color: #FFFFFF; /* белый */
+    --text-color: #000000;       /* черный */
+    --highlight-color: #CC0000;  /* красный для заголовков и важной информации */
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  header {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    color: var(--highlight-color);
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: var(--text-color);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color: var(--highlight-color);
+  }
+
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* Заголовки h2 с красным фоном и белым текстом */
+  h2 {
+    background-color: var(--highlight-color);
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 0; /* убрать лишний отступ сверху */
+    
+    /* Для лучшего визуала можно добавить тень или границу */
+    /* box-shadow: inset 0 -3px 5px rgba(0,0,0,0.2); */
+    
+    /* Центрировать текст (по умолчанию) */
+    text-align: left; 
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9; /* светлый фон для карточек */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px;
+}
+@media(max-width:768px) {
+   .project-card {
+       flex-basis: calc(50% -20px);
+   }
+}
+@media(max-width:480px) {
+   .project-card {
+       flex-basis: calc(100% -20px);
+   }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Итоги обучения на курсе</h1>
+<nav>
+<a href="#about">О курсе</a>
+<a href="#works">Мои работы</a>
+<a href="#contacts">Контакты</a>
+</nav>
+</header>
+
+<section id="about">
+<h2>О курсе</h2>
+<p style="line-height: 1.6;">Курс "Информационные системы в экономике" предназначен для изучения методов и технологий использования информационных систем для анализа, управления и автоматизации бизнес-процессов в экономической сфере. В рамках курса рассматриваются основные концепции, инструменты и практические навыки работы с современными информационными системами, что позволяет студентам эффективно применять их в профессиональной деятельности.</p>
+</section>
+
+<section id="works">
+<h2>Мои работы в GitHub</h2>
+<div class="projects" style="display: flex; flex-direction: column; gap: 20px;">
+  <div class="project-card">
+    <h3>Визуализация данных с Seaborn</h3>
+    <p>Проект посвящен визуализации данных с помощью библиотеки Seaborn. В нем представлены графики и анализ данных для лучшего понимания информации.</p>
+    <a href="https://github.com/skorov48/Visualization-with-Seaborn.git" target="_blank">Посмотреть проект</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Анализ финансовых данных Yahoo Finance</h3>
+    <p>Этот репозиторий содержит скрипты для анализа и обработки финансовых данных Yahoo Finance. Используются библиотеки pandas и matplotlib для визуализации.</p>
+    <a href="https://github.com/skorov48/Yahoo_finance.git" target="_blank">Посмотреть проект</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Конструкция if-elif-else в Python</h3>
+    <p>Пример использования конструкции if-elif-else в Python. Демонстрирует условные операторы и их применение в программировании.</p>
+    <a href="https://github.com/skorov48/The-if-elif-else-construct.git" target="_blank">Посмотреть проект</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Дашборд криптовалют</h3>
+    <p>Проект представляет собой дашборд для отслеживания цен и информации о криптовалютах, реализованный с использованием современных веб-технологий.</p>
+    <a href="https://github.com/skorov48/Cryptocurrency-dashboard.git" target="_blank">Посмотреть проект</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Финансовые алгоритмы</h3>
+    <p>Репозиторий содержит реализации различных финансовых алгоритмов для анализа и моделирования финансовых процессов.</p>
+    <a href="https://github.com/skorov48/Financial-algorithms.git" target="_blank">Посмотреть проект</a>
+  </div>
+
+</div>
+</section>
+
+</div>
+</section>
+
+<section id="contacts">
+<h2>Контакты</h2>
+<p>Если хотите связаться со мной — пишите на email или через социальные сети.</p>
+<p>Мой GitHub аккаунт — <a href="https://github.com/skorov48" target="_blank">https://github.com/skorov48</a></p>
+<p>Электронная почта — <a href="mailto:Askorov-22@edu.ranepa.ru">Askorov-22@edu.ranepa.ru</a></p>
+</section>
+
+<footer>
+<p>&copy; <!-- Можно вставить текущий год через JavaScript или оставить статичным -->2024<!-- Или используйте PHP или другой серверный язык --></p>
+<script>
+
+document.querySelector('footer p').innerHTML = '&copy; ' + new Date().getFullYear() + ' Скоров Андрей. ЭБ-22-2.';
+</script>
+</footer>
+
+</body>
+</html>
